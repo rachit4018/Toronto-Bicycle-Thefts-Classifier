@@ -1,0 +1,250 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP247 Phase-2</title>
+</head>
+<body>
+    <p>
+        Enter the model name:
+    </p>
+
+    <form action="/sub" method="POST">
+        <input type="text" name="mod" placeholder="model name">
+        <input type="submit">
+
+    </form>
+    
+ 
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Bicycle Theft Prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">Is your Bicycle Stolen or Recovered?</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Showing your bike's stolen or recovered status</h5>
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/sub' method="POST" class="col s12">
+      <div class="row">
+
+        <div class="input-field col s4">
+            <label for="Primary_Offence"><b>Primary_Offence</b></label>
+            <br>
+          <input   id="Primary_Offence" name='Primary_Offence'type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="Occurrence_Date"><b>Occurrence_Date </b></label>
+            <br>
+          <input id="Occurrence_Date"  name="Occurrence_Date" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Occurrence_Year"><b>Occurrence_Year</b></label>
+            <br>
+          <input id="Occurrence_Year" name="Occurrence_Year" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Occurrence_Month"><b>Occurrence_Month</b></label>
+            <br>
+          <input id="Occurrence_Month" name="Occurrence_Month" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Occurrence_DayOfWeek"><b>Occurrence_DayOfWeek</b></label>
+            <br>
+          <input id="Occurrence_DayOfWeek" name="Occurrence_DayOfWeek" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Occurrence_DayOfMonth"><b>Occurrence_DayOfMonth</b></label>
+            <br>
+          <input id="Occurrence_DayOfMonth" name="Occurrence_DayOfMonth" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Occurrence_DayOfYear"><b>Occurrence_DayOfYear</b></label>
+            <br>
+          <input id="Occurrence_DayOfYear" name="Occurrence_DayOfYear" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Occurrence_Hour"><b>Occurrence_Hour</b></label>
+            <br>
+          <input id="Occurrence_Hour" name="Occurrence_Hour" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_Date"><b>Report_Date</b></label>
+            <br>
+          <input id="Report_Date" name="Report_Date" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_Year"><b>Report_Year</b></label>
+            <br>
+          <input id="Report_Year" name="Report_Year" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_Month"><b>Report_Month</b></label>
+            <br>
+          <input id="Report_Month" name="Report_Month" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_DayOfWeek"><b>Report_DayOfWeek</b></label>
+            <br>
+          <input id="Report_DayOfWeek" name="Report_DayOfWeek" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_DayOfMonth"><b>Report_DayOfMonth</b></label>
+            <br>
+          <input id="Report_DayOfMonth" name="Report_DayOfMonth" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_DayOfYear"><b>Report_DayOfYear</b></label>
+            <br>
+          <input id="Report_DayOfYear" name="Report_DayOfYear" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Report_Hour"><b>Report_Hour</b></label>
+            <br>
+          <input id="Report_Hour" name="Report_Hour" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Division"><b>Division</b></label>
+            <br>
+          <input id="Division" name="Division" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Hood_ID"><b>Hood_ID</b></label>
+            <br>
+          <input id="Hood_ID" name="Hood_ID" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Premises_Type"><b>Premises_Type</b></label>
+            <br>
+          <input id="Premises_Type" name="Premises_Type" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Bike_Make"><b>Bike_Make</b></label>
+            <br>
+          <input id="Bike_Make" name="Bike_Make" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Bike_Model"><b>Bike_Model</b></label>
+            <br>
+          <input id="Bike_Model" name="Bike_Model" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Bike_Type"><b>Bike_Type</b></label>
+            <br>
+          <input id="Bike_Type" name="Bike_Type" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Bike_Speed"><b>Bike_Speed</b></label>
+            <br>
+          <input id="Bike_Speed" name="Bike_Speed" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Bike_Colour"><b>Bike_Colour</b></label>
+            <br>
+          <input id="Bike_Colour" name="Bike_Colour" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Cost_of_Bike"><b>Cost_of_Bike</b></label>
+            <br>
+          <input id="Cost_of_Bike" name="Cost_of_Bike" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="cost_catag"><b>cost_catag</b></label>
+            <br>
+          <input id="cost_catag" name="cost_catag" type="text" class="validate">
+      </div>
+      <div class="input-field col s4">
+            <label for="model"><b>Enter the model</b></label>
+            <br>
+          <input id="model" name="model" type="text" class="validate" placeholder="knn,svm,nn,lg,dt,rf">
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light blue">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+    </div>
+    </div>
+    
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
